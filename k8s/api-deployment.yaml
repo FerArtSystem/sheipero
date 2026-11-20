@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sheipero-api-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sheipero-api
+  template:
+    metadata:
+      labels:
+        app: sheipero-api
+    spec:
+      containers:
+        - name: sheipero-api
+          image: sheipero-api:v1
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 3000
