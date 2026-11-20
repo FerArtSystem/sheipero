@@ -116,3 +116,7 @@ O resultado de cada execução aparece na aba **Actions** do repositório e como
 - Execuções do pipeline: aba **Actions** do repositório.
 - Pull Requests integrados: aba **Pull Requests** (filtro *Closed*).
 - Versões marcadas: seção **Releases / Tags**.
+
+## Aplicativo Android
+
+A pasta sheipero-app contém o código-fonte do app Android do projeto. A API da pasta sheipero-api foi criada para ser consumida por ele.
